@@ -17,6 +17,97 @@ body {
 h1 {
     text-align: center;
 }
+/* ---------- BODY & APP CONTAINER ---------- */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #E0F7FA; /* soft cyan background */
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.app-container {
+    background: #FFFFFF; /* white card */
+    width: 320px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* slightly stronger shadow */
+}
+
+/* ---------- HEADINGS ---------- */
+h1 {
+    text-align: center;
+    color: #00796B; /* teal heading */
+}
+
+/* ---------- INPUT SECTION ---------- */
+.input-section {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #B2EBF2; /* soft border */
+    border-radius: 8px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #00796B; /* teal on focus */
+}
+
+/* ---------- BUTTON ---------- */
+button {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #4DD0E1; /* cyan button */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.2s;
+}
+
+button:hover {
+    background-color: #26C6DA; /* slightly darker cyan */
+    transform: scale(1.05);
+}
+
+/* ---------- TASK LIST ---------- */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #E0F2F1; /* light teal card for tasks */
+    transition: background-color 0.2s;
+}
+
+li:hover {
+    background-color: #B2DFDB; /* slightly darker on hover */
+}
+
+/* ---------- COMPLETED TASKS ---------- */
+.completed {
+    text-decoration: line-through;
+    color: #80CBC4; /* muted teal for completed */
+}
+
+/* ---------- STATS ---------- */
+#stats {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #00796B; /* teal stats */
+    text-align: center;
+}
 
 .input-section {
     display: flex;
